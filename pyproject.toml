@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "singer89de-injectscan"
+version = "0.1.0"
+description = "按指令覆盖、角色切换、编码混淆等启发式模式扫描并标注位置与置信度"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "singer89de" }]
+keywords = ["cli", "analysis", "observability", "evaluation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://singer89de.github.io"
+Repository = "https://github.com/singer89de/injectscan"
+Issues = "https://github.com/singer89de/injectscan/issues"
+
+[project.scripts]
+injectscan = "injectscan:main"
+
+[tool.setuptools]
+py-modules = ["injectscan"]
